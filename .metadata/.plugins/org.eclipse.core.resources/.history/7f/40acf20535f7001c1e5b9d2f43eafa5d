@@ -1,0 +1,10 @@
+package Models;
+
+public class Login {
+	private  email;
+	private  pass;
+	
+	
+	
+	
+}

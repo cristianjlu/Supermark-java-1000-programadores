@@ -1,0 +1,80 @@
+package Models;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import conexion.Conexion;
+
+public class InicioUsuario {
+	private Conexion conexion;
+	
+
+	public InicioUsuario() {
+		conexion = new Conexion();
+	}
+	
+	public void menu (Usuario usuario) throws SQLException {
+		Scanner sc = new Scanner(System.in);
+		System.out.println(
+				"ingreso exitoso " + "bienvenido " + usuario.getNombre() + " " +
+		usuario.getApellido());
+		
+		int opcion=0; //esta es del do while
+		
+		
+		do {
+		System.out.println("ingrese una opcion:");
+		System.out.println(
+				"1- Selecionar categoria de productos\r\n" + 
+						"2- ver listado de productos seleccionados\r\n"
+						+ "3- Autorizar la compra de los productos selecionados");
+		int opc = sc.nextInt();
+		switch (opc) {
+		case 1:
+			System.out.println("Ingrese la opcion: ");
+			
+			String sql= "Select * from categoria";
+			ResultSet rs =conexion.traerConsulta(sql); 
+			while(rs.next()) {
+				int id= rs.getInt("ID");
+				String nombre= rs.getString("NOMBRE");
+				System.out.println("codigo : "+id +" " + nombre );
+				
+			}
+			
+			System.out.println("Ingrese el codigo de la categoria");
+				int opcionCodigo =sc.nextInt();
+				String sql2= "select ID, nombre,precio,FECHA_VENCIMIENTO "
+						+ "from productos where iD = " + "'" + opcionCodigo + "';";
+				
+				
+			break;
+		case 2:
+	
+			break;
+		case 3:
+	
+			break;
+
+		default:System.out.println("Opcion incorrecta");
+			break;
+		
+		
+			}
+			
+			
+			
+		
+		 
+
+		
+		}while(opcion !=0); 
+			
+		
+	
+		
+		
+	}
+	
+}

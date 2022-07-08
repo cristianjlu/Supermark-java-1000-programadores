@@ -1,0 +1,17 @@
+package Models;
+
+
+
+
+public class Producto {
+	private int id;
+	private String nombre;
+	private int Stock;
+	int cantidad;
+	private String fechadevencimiento;
+	private double precio;
+	
+	}
+
+
+	

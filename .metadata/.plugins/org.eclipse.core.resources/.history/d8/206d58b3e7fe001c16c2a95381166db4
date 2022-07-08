@@ -1,0 +1,13 @@
+package Models;
+
+import java.util.ArrayList;
+
+public class Carrito {
+	private ArrayList<Producto> ArrayProducto;
+
+	public Carrito(ArrayList<Producto> arrayProducto) {
+		
+		}
+	
+	
+}

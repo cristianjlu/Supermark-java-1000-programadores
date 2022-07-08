@@ -1,0 +1,77 @@
+package Models;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import conexion.Conexion;
+
+public class Carrito {
+	private ArrayList<Producto> arrayProducto;
+
+	public Carrito() {
+		
+		this.arrayProducto = new ArrayList<Producto>();
+	}
+	
+	public void agragaProducto(Producto prod) {
+		this.arrayProducto.add(prod);
+	}
+	
+	public void recorreCarrito() {
+		for (int i = 0; i < arrayProducto.size(); i++) {
+				String elementos = arrayProducto.get(i).toString()	;
+				System.out.println(elementos);
+			
+		}
+		
+	}
+	
+	public String Detalle() {
+		
+    	String cadena = "";
+		for (int i=0;i<this.arrayProducto.size();i++) {
+		    cadena = cadena+arrayProducto.get(i).toString()+"\n";
+			
+		}
+		
+		return cadena;
+		
+	}
+	
+	
+	
+	public void autorizarCompra(Usuario user) throws SQLException {
+		String sql;
+		double total=0;
+		Calendar fecha = new GregorianCalendar();
+		
+		int anio = fecha.get(Calendar.YEAR);
+	    int mes = fecha.get(Calendar.MONTH);
+	    int dia = fecha.get(Calendar.DAY_OF_MONTH);
+	    String fechaActual=anio+"-"+mes+"-"+dia;
+	    
+	    for (int i=0; i<this.arrayProducto.size(); i++) {
+	    	total +=(arrayProducto.get(i)).getPrecio()*arrayProducto.get(i).getCantidad();
+	    }
+	    
+	    String detalle = Detalle();
+	 
+			
+		sql = "insert into ventas values (null,"+
+		user.getId()+",'"+fechaActual+"','"+detalle+"',"+total+");";
+			
+			//System.out.println(sql);
+			
+		Conexion conexion = new Conexion();
+		conexion.traerConsulta(sql);
+		System.out.println("Compra cargada con exito!");
+			
+			
+				
+	}
+	
+	
+	
+	
+}

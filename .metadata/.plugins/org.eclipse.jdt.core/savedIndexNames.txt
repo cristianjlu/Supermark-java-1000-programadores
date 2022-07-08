@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\tikol\OneDrive\Escritorio\PROYECTO SUPERMERCADO\.metadata\.plugins\org.eclipse.jdt.core
+2254053288.index
+3199002448.index
+2506192191.index
+1865797976.index
+2946972234.index

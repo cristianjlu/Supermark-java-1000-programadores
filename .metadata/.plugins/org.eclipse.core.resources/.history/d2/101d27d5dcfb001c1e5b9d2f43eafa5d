@@ -1,0 +1,40 @@
+package Models;
+
+import java.util.Scanner;
+
+public class Registro {
+	private int id;
+	private String nombre;
+	private String apellido;
+	private String email;
+	private String contrasenia;
+	private boolean tieneTarjeta;
+	private int idTipodeusuario;
+
+	public Registro() {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("ingrese su nombre: ");
+		this.nombre = sc.nextLine();
+		System.out.println("ingrese su apellido: ");
+		this.apellido = sc.nextLine();
+		System.out.println("ingrese su email: ");
+		this.email = sc.nextLine();
+		System.out.println("ingrese su contrasenia: ");
+		this.contrasenia = sc.nextLine();
+		this.tieneTarjeta = false; // le ponemos false por que es usuario nuevo
+		this.idTipodeusuario = 1;// 1 = tipo usuario cliente 2 = admin
+
+	}
+
+	public void validaDatos() {
+		Usuario usuario = null;
+		if (this.nombre != "" && this.apellido != "" && this.email != "" && this.contrasenia != "") {
+			String sql ="insert into usuario values"("'"+this.id = null"',"  + "'"+this.nombre "',"+
+		"'"this.apellido"',"+ "'"this.email"',"+"'"this.contrasenia"',");
+
+
+		}
+
+	}
+}

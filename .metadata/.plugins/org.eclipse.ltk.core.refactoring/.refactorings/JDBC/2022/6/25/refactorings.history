@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Conexion_BD.java&apos; to &apos;PROYECTO/src/conexion&apos;&#x0D;&#x0A;- Original project: &apos;JDBC&apos;&#x0D;&#x0A;- Destination element: &apos;PROYECTO/src/conexion&apos;&#x0D;&#x0A;- Original element: &apos;controlador.Conexion_BD.java&apos;" description="Copy compilation unit" destination="=PROYECTO/src&lt;conexion" element1="/src&lt;controlador{Conexion_BD.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1655933230041" units="1" version="1.0"/>
+</session>

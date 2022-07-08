@@ -1,0 +1,20 @@
+package Models;
+
+import conexion.Conexion;
+
+public class InicioUsuario {
+	private Conexion conexion;
+
+	public InicioUsuario() {
+		conexion = new Conexion();
+	}
+	
+	public void menu (Usuario usuario) {
+		System.out.println(
+				"ingreso exitoso " + "bienvenido " + usuario.getNombre() + " " +
+		usuario.getApellido());
+	}
+	
+	
+	
+}

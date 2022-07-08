@@ -1,0 +1,36 @@
+package Models;
+
+import java.util.ArrayList;
+
+public class Carrito {
+	private ArrayList<Producto> arrayProducto;
+
+	public Carrito() {
+		
+		this.arrayProducto = new ArrayList<Producto>();
+	}
+	
+	public void agragaProducto(Producto prod) {
+		this.arrayProducto.add(prod);
+	}
+	
+	public void recorreCarrito() {
+		for (int i = 0; i < arrayProducto.size(); i++) {
+				int elementos = arrayProducto.get(i).toString()	;
+				System.out.println(elementos);
+			
+		}
+		
+	}
+	
+	public String detalle(){
+		for (Producto producto : arrayProducto) {
+			System.out.println(producto);
+		}
+	}
+	
+	
+	
+	
+	
+}

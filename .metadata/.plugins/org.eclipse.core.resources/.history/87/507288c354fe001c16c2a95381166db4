@@ -1,0 +1,46 @@
+package Models;
+
+import java.util.Scanner;
+
+import conexion.Conexion;
+
+public class InicioUsuario {
+	private Conexion conexion;
+	
+	Scanner sc = new Scanner(System.in);
+	public InicioUsuario() {
+		conexion = new Conexion();
+	}
+	
+	public void menu (Usuario usuario) {
+		System.out.println(
+				"ingreso exitoso " + "bienvenido " + usuario.getNombre() + " " +
+		usuario.getApellido());
+
+		int opcion = 0; 
+		
+		do {
+		
+		
+		
+		System.out.println("ingrese una opcion:");
+		System.out.println(
+				"1- Selecionar categoria de productos\r\n" + 
+						"2- ver listado de productos seleccionados\r\n"
+						+ "3- Autorizar la compra de los productos selecionados");
+		
+		
+		int opcion1 =sc.nextInt();
+		
+
+		
+		}
+		while() {
+			
+		}
+	
+		
+		
+	}
+	
+}

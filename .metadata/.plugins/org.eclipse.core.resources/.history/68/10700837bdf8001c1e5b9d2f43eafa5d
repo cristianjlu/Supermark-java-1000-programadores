@@ -1,0 +1,83 @@
+package Models;
+
+public class Cliente extends Usuario {
+	private int id;
+	private String domicilio;
+	private boolean tieneTarjeta;
+	private long fechanacimiento;
+	private boolean tieneDescuento;
+	private Compra compra;
+
+	public Cliente(int id, String nombre, String apellido, int dni, int cel, boolean esadmin, int id2, String domicilio,
+			boolean tieneTarjeta, long fechanacimiento, boolean tieneDescuento, Compra compra) {
+		super(id, nombre, apellido, dni, cel, esadmin,email);
+		id = id2;
+		this.domicilio = domicilio;
+		this.tieneTarjeta = tieneTarjeta;
+		this.fechanacimiento = fechanacimiento;
+		this.tieneDescuento = tieneDescuento;
+		this.compra = compra;
+		this.email= email;
+		
+	}
+
+	public Cliente(int id, String nombre, String apellido, int dni, int cel, boolean esadmin) {
+		super(id, nombre, apellido, dni, cel, esadmin);
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getDomicilio() {
+		return domicilio;
+	}
+
+	public void setDomicilio(String domicilio) {
+		this.domicilio = domicilio;
+	}
+
+	public boolean isTieneTarjeta() {
+		return tieneTarjeta;
+	}
+
+	public void setTieneTarjeta(boolean tieneTarjeta) {
+		this.tieneTarjeta = tieneTarjeta;
+	}
+
+	public long getFechanacimiento() {
+		return fechanacimiento;
+	}
+
+	public void setFechanacimiento(long fechanacimiento) {
+		this.fechanacimiento = fechanacimiento;
+	}
+
+	public boolean isTieneDescuento() {
+		return tieneDescuento;
+	}
+
+	public void setTieneDescuento(boolean tieneDescuento) {
+		this.tieneDescuento = tieneDescuento;
+	}
+
+	public Compra getCompra() {
+		return compra;
+	}
+
+	public void setCompra(Compra compra) {
+		this.compra = compra;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [id=" + id + ", domicilio=" + domicilio + ", tieneTarjeta=" + tieneTarjeta
+				+ ", fechanacimiento=" + fechanacimiento + ", tieneDescuento=" + tieneDescuento + ", compra=" + compra
+				+ "]";
+	}
+
+}

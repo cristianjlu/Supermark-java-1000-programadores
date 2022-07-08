@@ -1,0 +1,20 @@
+package Models;
+
+public abstract class Usuario {
+	private int id;
+	private String nombre;
+	private String apellido;
+	private String email;	
+	private int dni;
+	private int cel;
+	private boolean esadmin;
+
+
+//	CONTRUCTORES
+	
+
+
+	
+	
+
+}

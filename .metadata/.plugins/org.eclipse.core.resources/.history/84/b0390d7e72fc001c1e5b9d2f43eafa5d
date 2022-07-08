@@ -1,0 +1,69 @@
+package Models;
+
+import java.sql.ResultSet;
+
+import conexion.Conexion;
+
+public class Producto {
+	private int id;
+	private String nombre;
+	private int Stock;
+	private long fechadevencimiento;
+	private double precio;
+	public Producto(int id, String nombre, int stock, long fechadevencimiento, double precio) {
+		
+		this.id = id;
+		this.nombre = nombre;
+		Stock = stock;
+		this.fechadevencimiento = fechadevencimiento;
+		this.precio = precio;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getStock() {
+		return Stock;
+	}
+	public void setStock(int stock) {
+		Stock = stock;
+	}
+	public long getFechadevencimiento() {
+		return fechadevencimiento;
+	}
+	public void setFechadevencimiento(long fechadevencimiento) {
+		this.fechadevencimiento = fechadevencimiento;
+	}
+	public double getPrecio() {
+		return precio;
+	}
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	
+	
+	public void selecionarCategoria(){
+		Conexion conexion = new Conexion();
+	String consulta = "select * from categoria;";
+	ResultSet rs = conexion.devuelveConsulta(consulta);
+	while (rs.next()) {
+		int id = rs.getInt("ID");
+		String nombre = rs.getString("NOMBRE");
+		System.out.println(id + " " + nombre);
+		};
+	
+	
+	
+
+	}
+}
+	
+	
