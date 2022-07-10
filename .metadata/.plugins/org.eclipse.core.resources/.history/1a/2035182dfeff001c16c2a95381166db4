@@ -57,6 +57,7 @@ public class Registro {
 			System.out.println("usuario cargado");
 			
 
+				
 		}else {
 			System.out.println("datos mal ingresados");
 		}

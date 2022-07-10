@@ -102,23 +102,6 @@ public class Usuario {
 				+ ", carritoCompraU=" + carritoCompraU + "]";
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 //
 //	public void selecionarCategoria() throws SQLException{
 //		Conexion conexion = new Conexion();

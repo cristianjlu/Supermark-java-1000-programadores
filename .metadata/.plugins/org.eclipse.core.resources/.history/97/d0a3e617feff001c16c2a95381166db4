@@ -105,20 +105,6 @@ public class Usuario {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 //
 //	public void selecionarCategoria() throws SQLException{
 //		Conexion conexion = new Conexion();

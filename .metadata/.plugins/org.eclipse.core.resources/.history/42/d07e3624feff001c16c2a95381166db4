@@ -67,7 +67,7 @@ public String detalle() {
 		sql = "insert into venta values (null,"+
 				fechaActual+",'"+detalle+"','"+total+"',"+usuario.getId()+");";
 			
-		
+			//System.out.println(sql);
 			
 		Conexion conexion = new Conexion();
 		conexion.agregarConsulta(sql);

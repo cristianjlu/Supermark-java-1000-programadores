@@ -117,7 +117,7 @@ public class InicioUsuario {
 		
 		}while(condicion !=0); 
 			
-		System.out.println("Gracias por su compra...");
+		System.out.println("Gracias por su compra");
 	
 		
 		
