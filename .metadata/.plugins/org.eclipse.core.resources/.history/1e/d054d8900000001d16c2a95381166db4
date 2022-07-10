@@ -40,7 +40,7 @@ public class Principal {
 						
 						
 					}else {
-//						inicioadmin .
+//						inicioadmin
 					}
 				
 				
@@ -54,6 +54,14 @@ public class Principal {
 			Registro registro= new Registro();
 			registro.validaDatos();
 		}
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

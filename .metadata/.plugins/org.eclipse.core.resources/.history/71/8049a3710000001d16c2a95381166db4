@@ -17,7 +17,7 @@ public class Principal {
 
 	public static void main(String[] args) throws SQLException {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Bienvenido al supermark..");
+		System.out.println("Bienvenido al supermark...");
 		System.out.println("Elije las opciones..\r\n"+ 
 				"1.- ingresar\r\n" + 
 				" 2.- Registrarse");
@@ -40,7 +40,7 @@ public class Principal {
 						
 						
 					}else {
-//						inicioadmin .
+//						inicioadmin
 					}
 				
 				
@@ -54,6 +54,14 @@ public class Principal {
 			Registro registro= new Registro();
 			registro.validaDatos();
 		}
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

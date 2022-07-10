@@ -37,6 +37,7 @@ public class Producto {
 		this.nombre = nombre;
 	}
 
+
 	public int getCantidad() {
 		return cantidad;
 	}

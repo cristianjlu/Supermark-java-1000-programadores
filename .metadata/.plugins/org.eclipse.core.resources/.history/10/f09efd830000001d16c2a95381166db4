@@ -61,6 +61,5 @@ public class Registro {
 			System.out.println("datos mal ingresados");
 		}
 
-		
 	}
 }
